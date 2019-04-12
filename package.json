@@ -5,6 +5,9 @@
   "author": "Kyle E. Mitchell <kyle@kemitchell.com> (https://kemitchell.com/)",
   "repository": "kemitchell/sustainability-schema.json",
   "license": "BlueOak-1.0.0",
+  "files": [
+    "index.json"
+  ],
   "scripts": {
     "test": "node test.js"
   }
