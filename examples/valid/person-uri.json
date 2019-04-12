@@ -1,0 +1,8 @@
+{
+  "project": "https://example.com/project",
+  "contributors": [
+    {
+      "uri": "https://example.com/sustainability.json"
+    }
+  ]
+}

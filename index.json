@@ -12,57 +12,74 @@
       "type": "array",
       "items": {
         "title": "contributor object",
-        "type": "object",
-        "properties": {
-          "name": {
-            "title": "contributor name",
-            "type": "string",
-            "minLength": 1
-          },
-          "type": {
-            "title": "contributor type",
-            "enum": [
-              "person",
-              "business",
-              "nonprofit",
-              "government"
+        "oneOf": [
+          {
+            "type": "object",
+            "properties": {
+              "uri": {
+                "title": "url of a contributor resource",
+                "type": "string",
+                "format": "uri"
+              }
+            },
+            "required": [
+              "uri"
             ]
           },
-          "updated": {
-            "title": "last-updated date",
-            "type": "string",
-            "format": "date"
-          },
-          "homepage": {
-            "title": "homepage URI",
-            "type": "string",
-            "format": "uri"
-          },
-          "donate": {
-            "title": "donation page URI",
-            "type": "string",
-            "format": "uri"
-          },
-          "hire": {
-            "title": "work availability page URI",
-            "type": "string",
-            "format": "uri"
-          },
-          "license": {
-            "title": "license purchase page URI",
-            "type": "string",
-            "format": "uri"
-          },
-          "service": {
-            "title": "service signup page URI",
-            "type": "string",
-            "format": "uri"
+          {
+            "type": "object",
+            "properties": {
+              "name": {
+                "title": "contributor name",
+                "type": "string",
+                "minLength": 1
+              },
+              "type": {
+                "title": "contributor type",
+                "enum": [
+                  "person",
+                  "business",
+                  "nonprofit",
+                  "government"
+                ]
+              },
+              "updated": {
+                "title": "last-updated date",
+                "type": "string",
+                "format": "date"
+              },
+              "homepage": {
+                "title": "homepage URI",
+                "type": "string",
+                "format": "uri"
+              },
+              "donate": {
+                "title": "donation page URI",
+                "type": "string",
+                "format": "uri"
+              },
+              "hire": {
+                "title": "work availability page URI",
+                "type": "string",
+                "format": "uri"
+              },
+              "license": {
+                "title": "license purchase page URI",
+                "type": "string",
+                "format": "uri"
+              },
+              "service": {
+                "title": "service signup page URI",
+                "type": "string",
+                "format": "uri"
+              }
+            },
+            "required": [
+              "name",
+              "type",
+              "updated"
+            ]
           }
-        },
-        "required": [
-          "name",
-          "type",
-          "updated"
         ]
       }
     }
