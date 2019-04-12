@@ -22,6 +22,10 @@
               "government"
             ]
           },
+          "homepage": {
+            "type": "string",
+            "format": "uri"
+          },
           "donate": {
             "type": "string",
             "format": "uri"
@@ -31,6 +35,10 @@
             "format": "uri"
           },
           "license": {
+            "type": "string",
+            "format": "uri"
+          },
+          "service": {
             "type": "string",
             "format": "uri"
           }
