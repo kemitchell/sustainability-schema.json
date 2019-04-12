@@ -1,0 +1,10 @@
+{
+  "project": "https://example.com/project",
+  "contributors": [
+    {
+      "name": "John Example",
+      "type": "person",
+      "donate": "https://example.com/donate"
+    }
+  ]
+}

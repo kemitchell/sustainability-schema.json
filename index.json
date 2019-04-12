@@ -1,0 +1,49 @@
+{
+  "type": "object",
+  "properties": {
+    "project": {
+      "type": "string",
+      "format": "uri"
+    },
+    "contributors": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "name": {
+            "type": "string",
+            "minLength": 1
+          },
+          "type": {
+            "enum": [
+              "person",
+              "company",
+              "foundation",
+              "government"
+            ]
+          },
+          "donate": {
+            "type": "string",
+            "format": "uri"
+          },
+          "hire": {
+            "type": "string",
+            "format": "uri"
+          },
+          "license": {
+            "type": "string",
+            "format": "uri"
+          }
+        },
+        "required": [
+          "name",
+          "type"
+        ]
+      }
+    }
+  },
+  "required": [
+    "project",
+    "contributors"
+  ]
+}
