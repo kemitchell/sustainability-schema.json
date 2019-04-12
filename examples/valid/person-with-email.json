@@ -1,0 +1,11 @@
+{
+  "project": "https://example.com/project",
+  "contributors": [
+    {
+      "name": "John Example",
+      "type": "person",
+      "email": "john@exmaple.com",
+      "updated": "2019-04-11"
+    }
+  ]
+}

@@ -66,6 +66,11 @@
           "type": "string",
           "format": "date"
         },
+        "email": {
+          "title": "e-mail address",
+          "type": "string",
+          "format": "email"
+        },
         "homepage": {
           "title": "homepage URI",
           "type": "string",
