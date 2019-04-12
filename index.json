@@ -1,91 +1,102 @@
 {
-  "title": "open software project sustainability metadata object",
-  "type": "object",
-  "properties": {
+  "$ref": "#/definitions/project",
+  "definitions": {
     "project": {
-      "title": "project URI",
-      "type": "string",
-      "format": "uri"
-    },
-    "contributors": {
-      "title": "array of contributor objects",
-      "type": "array",
-      "items": {
-        "title": "contributor object",
-        "oneOf": [
-          {
-            "type": "object",
-            "properties": {
-              "uri": {
-                "title": "url of a contributor resource",
-                "type": "string",
-                "format": "uri"
+      "title": "open software project sustainability metadata object",
+      "type": "object",
+      "properties": {
+        "project": {
+          "title": "project URI",
+          "type": "string",
+          "format": "uri"
+        },
+        "contributors": {
+          "title": "array of contributor objects",
+          "type": "array",
+          "items": {
+            "title": "contributor object",
+            "oneOf": [
+              {
+                "$ref": "#/definitions/contributor"
+              },
+              {
+                "$ref": "#/definitions/contributorReference"
               }
-            },
-            "required": [
-              "uri"
-            ]
-          },
-          {
-            "type": "object",
-            "properties": {
-              "name": {
-                "title": "contributor name",
-                "type": "string",
-                "minLength": 1
-              },
-              "type": {
-                "title": "contributor type",
-                "enum": [
-                  "person",
-                  "business",
-                  "nonprofit",
-                  "government"
-                ]
-              },
-              "updated": {
-                "title": "last-updated date",
-                "type": "string",
-                "format": "date"
-              },
-              "homepage": {
-                "title": "homepage URI",
-                "type": "string",
-                "format": "uri"
-              },
-              "donate": {
-                "title": "donation page URI",
-                "type": "string",
-                "format": "uri"
-              },
-              "hire": {
-                "title": "work availability page URI",
-                "type": "string",
-                "format": "uri"
-              },
-              "license": {
-                "title": "license purchase page URI",
-                "type": "string",
-                "format": "uri"
-              },
-              "service": {
-                "title": "service signup page URI",
-                "type": "string",
-                "format": "uri"
-              }
-            },
-            "required": [
-              "name",
-              "type",
-              "updated"
             ]
           }
-        ]
-      }
+        }
+      },
+      "required": [
+        "project",
+        "contributors"
+      ]
+    },
+    "contributorReference": {
+      "type": "object",
+      "properties": {
+        "uri": {
+          "title": "url of a contributor resource",
+          "type": "string",
+          "format": "uri"
+        }
+      },
+      "required": [
+        "uri"
+      ]
+    },
+    "contributor": {
+      "type": "object",
+      "properties": {
+        "name": {
+          "title": "contributor name",
+          "type": "string",
+          "minLength": 1
+        },
+        "type": {
+          "title": "contributor type",
+          "enum": [
+            "person",
+            "business",
+            "nonprofit",
+            "government"
+          ]
+        },
+        "updated": {
+          "title": "last-updated date",
+          "type": "string",
+          "format": "date"
+        },
+        "homepage": {
+          "title": "homepage URI",
+          "type": "string",
+          "format": "uri"
+        },
+        "donate": {
+          "title": "donation page URI",
+          "type": "string",
+          "format": "uri"
+        },
+        "hire": {
+          "title": "work availability page URI",
+          "type": "string",
+          "format": "uri"
+        },
+        "license": {
+          "title": "license purchase page URI",
+          "type": "string",
+          "format": "uri"
+        },
+        "service": {
+          "title": "service signup page URI",
+          "type": "string",
+          "format": "uri"
+        }
+      },
+      "required": [
+        "name",
+        "type",
+        "updated"
+      ]
     }
-  },
-  "required": [
-    "project",
-    "contributors"
-  ]
+  }
 }
