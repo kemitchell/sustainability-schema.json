@@ -1,0 +1,9 @@
+{
+  "project": "https://example.com/project",
+  "contributors": [
+    {
+      "name": "Apache Foundation",
+      "updated": "2019-04-11"
+    }
+  ]
+}
