@@ -15,7 +15,7 @@
           "type": "array",
           "items": {
             "title": "contributor object",
-            "oneOf": [
+            "anyOf": [
               {
                 "$ref": "#/definitions/contributor"
               },
