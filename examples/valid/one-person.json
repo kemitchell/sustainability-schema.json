@@ -4,7 +4,8 @@
     {
       "name": "John Example",
       "type": "person",
-      "donate": "https://example.com/donate"
+      "donate": "https://example.com/donate",
+      "updated": "2019-04-11"
     }
   ]
 }

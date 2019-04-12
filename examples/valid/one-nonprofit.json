@@ -4,7 +4,8 @@
     {
       "name": "Apache Foundation",
       "type": "nonprofit",
-      "donate": "https://www.apache.org/foundation/contributing.html"
+      "donate": "https://www.apache.org/foundation/contributing.html",
+      "updated": "2019-04-11"
     }
   ]
 }
