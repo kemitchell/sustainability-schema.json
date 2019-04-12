@@ -17,8 +17,8 @@
           "type": {
             "enum": [
               "person",
-              "company",
-              "foundation",
+              "business",
+              "nonprofit",
               "government"
             ]
           },

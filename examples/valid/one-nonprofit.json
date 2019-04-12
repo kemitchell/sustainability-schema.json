@@ -1,0 +1,10 @@
+{
+  "project": "https://example.com/project",
+  "contributors": [
+    {
+      "name": "Apache Foundation",
+      "type": "nonprofit",
+      "donate": "https://www.apache.org/foundation/contributing.html"
+    }
+  ]
+}

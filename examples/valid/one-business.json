@@ -1,0 +1,10 @@
+{
+  "project": "https://example.com/project",
+  "contributors": [
+    {
+      "name": "MongoDB",
+      "type": "business",
+      "homepage": "https://www.mongodb.com/products/overview"
+    }
+  ]
+}
