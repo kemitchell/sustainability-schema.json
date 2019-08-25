@@ -4,7 +4,12 @@
     {
       "name": "John Example",
       "type": "person",
-      "donate": "https://example.com/donate"
+      "uris": [
+        {
+          "action": "donate",
+          "uri": "https://example.com/donate"
+        }
+      ]
     }
   ]
 }

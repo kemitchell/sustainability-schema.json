@@ -76,25 +76,24 @@
           "type": "string",
           "format": "uri"
         },
-        "donate": {
-          "title": "donation page URI",
-          "type": "string",
-          "format": "uri"
-        },
-        "hire": {
-          "title": "work availability page URI",
-          "type": "string",
-          "format": "uri"
-        },
-        "license": {
-          "title": "license purchase page URI",
-          "type": "string",
-          "format": "uri"
-        },
-        "service": {
-          "title": "service signup page URI",
-          "type": "string",
-          "format": "uri"
+        "links": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "uri": {
+                "type": "string",
+                "format": "uri"
+              },
+              "action": {
+                "type": "string",
+                "minLength": 1
+              }
+            },
+            "required": [
+              "uri"
+            ]
+          }
         }
       },
       "required": [
